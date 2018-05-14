@@ -1,0 +1,19 @@
+<ion-header no-border class="custom-view">
+  <ion-navbar>
+    <button ion-button round class="custom-button">
+      <ion-icon name="search"></ion-icon>
+      搜狐集团
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="custom-content" [scrollDownOnLoad]="true">
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="Pull to refresh" refreshingSpinner="circles" refreshingText="Refreshing...">
+    </ion-refresher-content> 
+  </ion-refresher>
+  
+
+  <job-list></job-list>
+</ion-content>

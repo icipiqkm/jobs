@@ -1,0 +1,31 @@
+page-chat {
+    ion-toolbar{
+        min-height:0px !important;
+        padding:0 !important;
+        .toolbar-background{
+            background:rgb(226, 226, 226) !important;
+
+        }
+    }
+    ion-content{
+        background:$chat-bg !important;
+    }
+    ion-input .text-input{
+       border:1px solid red !important;
+        margin: 0 !important;
+        padding:3px 10px;
+        border-radius: 15px;
+        background: white;
+        width:100%;
+    }
+    .item{
+        background:none;
+        // font-size: 1.4rem;
+    }
+    .item-block{
+        min-height: 1rem; 
+    }
+    .item-inner{
+        padding-right:0 !important;
+    }
+}

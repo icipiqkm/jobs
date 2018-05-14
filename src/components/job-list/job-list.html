@@ -1,0 +1,6 @@
+<ion-card *ngFor="let job of jobs" tappable (click)="goJobinfo(job)">
+
+  <job-part [job]="job"></job-part>
+  <hr-part></hr-part>
+  
+</ion-card>

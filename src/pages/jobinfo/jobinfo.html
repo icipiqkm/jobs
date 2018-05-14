@@ -1,0 +1,78 @@
+<!-- 页头 -->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>职位详情</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+
+
+
+<!-- 内容 -->
+<ion-content>
+  <ion-card>
+    <job-part [job]="job"></job-part>
+    <gps-part></gps-part>
+  </ion-card>
+  <div margin-horizontal padding-top>
+    <p class="mhr">
+      <span ion-text color="dark">职位发布者</span>
+    </p>
+    <hr-part [button]="true"></hr-part>
+  </div>
+
+  <div margin-horizontal padding-top>
+    <p class="mhr">
+      <span ion-text color="dark">职位描述</span>
+    </p>
+    <p padding-top class="font-size-default">职位诱惑：haha职位诱惑职位诱惑职位诱惑职位诱惑职位诱惑职位诱惑 职位诱惑：haha职位诱惑职位诱惑职位诱惑职位诱惑职位诱惑职位诱惑 职位诱惑：haha职位诱惑职位诱惑职位诱惑职位诱惑职位诱惑职位诱惑 职位诱惑：haha职位诱惑职位诱惑职位诱惑职位诱惑职位诱惑职位诱惑
+      职位诱惑：haha职位诱惑职位诱惑职位诱惑职位诱惑职位诱惑职位诱惑 职位诱惑：haha职位诱惑职位诱惑职位诱惑职位诱惑职位诱惑职位诱惑 职位诱惑：haha职位诱惑职位诱惑职位诱惑职位诱惑职位诱惑职位诱惑
+    </p>
+  </div>
+  <div margin-horizontal padding-top>
+    <p class="mhr">
+      <span ion-text color="dark">友情提示</span>
+    </p>
+    <p class="font-size-default">
+      请选择信誉高的猎头找工作，避免上当受骗
+    </p>
+  </div>
+</ion-content>
+
+
+
+
+
+
+
+<!-- 页脚 -->
+<ion-footer>
+  <ion-toolbar>
+    <!-- <p>Ash, Misty, Brock</p> -->
+    <ion-row>
+
+      <ion-col col-2>
+        <button  ion-button full clear >
+            <div text-center>
+                <ion-icon class="font-size-large" name="ios-heart-outline"></ion-icon><br><span class="font-size-default">收藏</span>
+            </div>
+        </button>
+      </ion-col>
+      <ion-col col-2>
+          <button full ion-button clear >
+              <div  text-center >
+                  <ion-icon class="font-size-large" name="share"></ion-icon><br><span class="font-size-default">分享</span>
+              </div>
+          </button>
+      </ion-col>
+      <ion-col col-8>
+        <button (click)="goChat()" full ion-button color="danger" >在线聊天</button>
+      </ion-col>
+    </ion-row>
+
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,28 @@
+<div>
+    <button ion-item no-lines detail-none clear *ngIf="button" (click)="goInfo()" >
+        <ion-avatar item-start>
+            <img src="assets/images/icon.jpg">
+          </ion-avatar>
+          <span class="font-size-1-4" ion-text color="dark" text-start>HR名字</span>
+          <span class="font-size-default" padding-left ion-text text-end color="grayer">一分钟前活跃</span>
+          <div>
+            <span class="padding-bg font-size-default" ion-text color="grayer">猎头</span>
+          </div>
+          <ion-icon ion-text color="grayer" item-content item-end name="ios-arrow-forward"></ion-icon>
+    </button>
+</div>
+
+<ion-row *ngIf="!button">
+  <ion-col>
+    <ion-item no-border>
+      <ion-avatar item-start>
+        <img src="assets/images/icon.jpg">
+      </ion-avatar>
+      <span class="font-size-1-4" ion-text color="dark" text-start>HR名字</span>
+      <span class="font-size-default" padding-left ion-text text-end color="grayer">一分钟前活跃</span>
+      <div>
+        <span class="padding-bg font-size-default" ion-text color="grayer">猎头</span>
+      </div>
+    </ion-item>
+  </ion-col>
+</ion-row>
